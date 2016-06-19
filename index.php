@@ -1,5 +1,7 @@
 <?php
-$a = __DIR__ . '/test';
-var_dump ($a);
+
+require __DIR__ . '/autoload.php';
+
+$a = new \App\Db();
 
 ?>
