@@ -1,4 +1,5 @@
-12345
 <?php
-echo 'the oria';
+$a = __DIR__ . '/test';
+var_dump ($a);
+
 ?>
