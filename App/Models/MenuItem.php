@@ -4,18 +4,17 @@ namespace App\Models;
 
 
 use App\Db;
+use App\Model;
 
-class MenuItem
+class MenuItem extends Model
 {
+    const DB_TABLE_NAME = 'menu';
+
     public $id;
     public $title;
     public $pos;
     public $href;
     public $parent;
 
-    public static function GetAllItems()
-    {
-        $db=new Db();
-        return $db->query('SELECT * FROM menu', \App\Models\MenuItem::class);
-    }
+
 }
