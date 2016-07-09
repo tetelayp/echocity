@@ -10,7 +10,7 @@ class MenuItem extends Model
 {
     const DB_TABLE_NAME = 'menu';
 
-    public $id;
+    
     public $title;
     public $pos;
     public $href;
